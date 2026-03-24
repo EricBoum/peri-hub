@@ -36,6 +36,27 @@ pnpm tauri dev
 - Windows：
   `pnpm build:win`
 
+### 下载
+
+- 直接下载（推荐）：[GitHub Releases](https://github.com/EricBoum/peri-hub/releases/latest)
+- 本地导出 DMG 到项目根目录：
+  `pnpm release:mac`
+- 导出后文件：
+  `release/peri-hub-macos-arm64.dmg` 或 `release/peri-hub-macos-x64.dmg`
+
+#### 下载表格（最新版本）
+
+| 平台 | 架构 | 包类型 | 下载 |
+| --- | --- | --- | --- |
+| macOS | Apple Silicon (ARM64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+| macOS | Intel (x64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-x64.dmg) |
+| Windows | x64 | NSIS Installer (.exe) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-x64-setup.exe) |
+| Windows | x64 | MSI (.msi) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-x64.msi) |
+| Windows | ARM64 | NSIS Installer (.exe) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-arm64-setup.exe) |
+| Windows | ARM64 | MSI (.msi) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-arm64.msi) |
+
+> 发布时请使用表格里的文件名上传资产，链接会自动指向最新版本。
+
 
 ---
 
@@ -79,7 +100,20 @@ pnpm tauri dev
 - Export DMG to project root for sharing:
   `pnpm release:mac`
 - Exported file path:
-  `release/peri-hub-latest.dmg`
+  `release/peri-hub-macos-arm64.dmg` or `release/peri-hub-macos-x64.dmg`
+
+#### Download Matrix (Latest Release)
+
+| Platform | Architecture | Package | Download |
+| --- | --- | --- | --- |
+| macOS | Apple Silicon (ARM64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+| macOS | Intel (x64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-x64.dmg) |
+| Windows | x64 | NSIS Installer (.exe) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-x64-setup.exe) |
+| Windows | x64 | MSI (.msi) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-x64.msi) |
+| Windows | ARM64 | NSIS Installer (.exe) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-arm64-setup.exe) |
+| Windows | ARM64 | MSI (.msi) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-windows-arm64.msi) |
+
+> Upload release assets with the exact filenames above so these links always resolve.
 
 ### Recommended GitHub Topics
 
