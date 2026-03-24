@@ -69,7 +69,7 @@ pnpm tauri dev
 
 - macOS:
   `pnpm build:mac`
-- Windows (recommended on a Windows machine or CI):
+- Windows:
   `pnpm build:win`
 
 ### Recommended GitHub Topics
