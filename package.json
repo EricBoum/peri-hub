@@ -23,7 +23,9 @@
     "preview": "vite preview",
     "tauri": "tauri",
     "gen:dmg-bg": "swift scripts/generate-dmg-background.swift",
+    "export:dmg": "bash scripts/export-dmg.sh",
     "build:mac": "tauri build --bundles app,dmg",
+    "release:mac": "pnpm build:mac && pnpm export:dmg",
     "build:win": "tauri build --bundles nsis,msi",
     "build:all": "pnpm build:mac && pnpm build:win"
   },

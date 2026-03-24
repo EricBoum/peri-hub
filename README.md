@@ -36,6 +36,14 @@ pnpm tauri dev
 - Windows：
   `pnpm build:win`
 
+### 下载
+
+- 直接下载最新安装包（推荐）：[GitHub Releases](https://github.com/EricBoum/peri-hub/releases/latest)
+- 本地导出到项目根目录（便于分发）：
+  `pnpm release:mac`
+- 导出后文件位置：
+  `release/peri-hub-latest.dmg`
+
 ---
 
 ## English
@@ -71,6 +79,14 @@ pnpm tauri dev
   `pnpm build:mac`
 - Windows:
   `pnpm build:win`
+
+### Download
+
+- Direct download (recommended): [GitHub Releases](https://github.com/EricBoum/peri-hub/releases/latest)
+- Export DMG to project root for sharing:
+  `pnpm release:mac`
+- Exported file path:
+  `release/peri-hub-latest.dmg`
 
 ### Recommended GitHub Topics
 
