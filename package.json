@@ -2,6 +2,20 @@
   "name": "peri-hub",
   "private": true,
   "version": "0.1.0",
+  "description": "Cross-platform desktop peripheral hub for monitor and device management (Tauri + React + Rust).",
+  "keywords": [
+    "tauri",
+    "rust",
+    "react",
+    "desktop-app",
+    "cross-platform",
+    "monitor-control",
+    "brightness-control",
+    "ddc-ci",
+    "macos",
+    "windows",
+    "peripheral-manager"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
