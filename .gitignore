@@ -13,10 +13,11 @@ dist-ssr
 *.local
 src-tauri/target
 release/*.dmg
+.tmp-release-*/
 
 # Editor directories and files
-.vscode/*
-!.vscode/extensions.json
+.vscode/
+.claude/
 .idea
 .DS_Store
 *.suo

@@ -36,6 +36,15 @@ pnpm tauri dev
 - Windows：
   `pnpm build:win`
 
+### 发布命令（macOS）
+
+```bash
+pnpm release:mac
+```
+
+输出文件：
+`release/peri-hub-macos-arm64.dmg`
+
 ### 发布说明
 
 当前发布 `unsigned` 安装包（未做 Apple 签名与公证）。
@@ -94,6 +103,15 @@ pnpm tauri dev
   `pnpm build:mac`
 - Windows:
   `pnpm build:win`
+
+### Release Command (macOS)
+
+```bash
+pnpm release:mac
+```
+
+Output file:
+`release/peri-hub-macos-arm64.dmg`
 
 ### Release Notes
 
