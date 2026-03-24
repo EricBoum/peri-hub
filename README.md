@@ -6,10 +6,6 @@
 
 peri-hub 是一个基于 Tauri + React + TypeScript 的跨平台桌面应用，用于管理外设与显示器控制。
 
-### 关键词
-
-`Tauri` `Rust` `React` `桌面应用` `外设管理` `显示器控制` `亮度控制` `DDC/CI` `macOS` `Windows` `cross-platform`
-
 ### 功能
 
 - 显示器检测与亮度控制
@@ -35,15 +31,6 @@ pnpm tauri dev
   `pnpm build:mac`
 - Windows：
   `pnpm build:win`
-
-### 发布命令（macOS）
-
-```bash
-pnpm release:mac
-```
-
-输出文件：
-`release/peri-hub-macos-arm64.dmg`
 
 ### 发布说明
 
@@ -74,10 +61,6 @@ xattr -dr com.apple.quarantine /Applications/peri-hub.app
 
 peri-hub is a cross-platform desktop app built with Tauri + React + TypeScript for peripheral and monitor management.
 
-### Keywords
-
-`tauri` `rust` `react` `desktop app` `peripheral manager` `monitor control` `brightness control` `ddc/ci` `macos` `windows` `cross-platform`
-
 ### Features
 
 - Monitor detection and brightness control
@@ -104,15 +87,6 @@ pnpm tauri dev
 - Windows:
   `pnpm build:win`
 
-### Release Command (macOS)
-
-```bash
-pnpm release:mac
-```
-
-Output file:
-`release/peri-hub-macos-arm64.dmg`
-
 ### Release Notes
 
 Current release uses `unsigned` macOS builds (without Apple signing/notarization).
@@ -135,7 +109,3 @@ Current release uses `unsigned` macOS builds (without Apple signing/notarization
 ```bash
 xattr -dr com.apple.quarantine /Applications/peri-hub.app
 ```
-
-### Recommended GitHub Topics
-
-`tauri` `rust` `react` `vite` `desktop-app` `cross-platform` `monitor` `monitor-control` `brightness` `ddc-ci` `macos` `windows`
