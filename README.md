@@ -36,28 +36,27 @@ pnpm tauri dev
 - Windows：
   `pnpm build:win`
 
-### 发布（签名 + 公证）
+### 发布说明
 
-已配置 GitHub Actions 工作流：
-`/.github/workflows/release-macos-signed.yml`
-
-发布前需要在仓库 `Settings -> Secrets and variables -> Actions` 配置：
-
-- `APPLE_CERTIFICATE`：Developer ID Application 证书（`.p12`）的 base64
-- `APPLE_CERTIFICATE_PASSWORD`：`.p12` 密码
-- `APPLE_SIGNING_IDENTITY`：签名身份（例如 `Developer ID Application: ...`）
-- `APPLE_ID`：Apple ID 邮箱
-- `APPLE_PASSWORD`：Apple app-specific password
-- `APPLE_TEAM_ID`：Apple Developer Team ID
-
-配置完成后，发布一个 GitHub Release（或手动触发 workflow）即可生成并上传已签名公证的 `peri-hub-macos-arm64.dmg`。
+当前发布 `unsigned` 安装包（未做 Apple 签名与公证）。
 
 ### 下载
 
 
 | 平台 | 架构 | 包类型 | 下载 |
 | --- | --- | --- | --- |
-| macOS | Apple Silicon (ARM64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+| macOS | Apple Silicon (ARM64) | DMG (unsigned) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+
+### macOS 安装
+
+1. 下载并打开 DMG，把 `peri-hub.app` 拖到 `Applications`。
+2. 在 `Applications` 中对 `peri-hub.app` 右键，选择“打开”。
+3. 若系统仍提示阻止：进入 `系统设置 -> 隐私与安全性`，点击“仍要打开”。
+4. 若仍无法打开，可执行：
+
+```bash
+xattr -dr com.apple.quarantine /Applications/peri-hub.app
+```
 
 
 ---
@@ -96,22 +95,9 @@ pnpm tauri dev
 - Windows:
   `pnpm build:win`
 
-### Release (Signed + Notarized)
+### Release Notes
 
-GitHub Actions workflow is configured at:
-`/.github/workflows/release-macos-signed.yml`
-
-Before release, add these repository secrets in
-`Settings -> Secrets and variables -> Actions`:
-
-- `APPLE_CERTIFICATE`: base64 of your Developer ID Application `.p12`
-- `APPLE_CERTIFICATE_PASSWORD`: password of the `.p12`
-- `APPLE_SIGNING_IDENTITY`: signing identity (for example `Developer ID Application: ...`)
-- `APPLE_ID`: Apple ID email
-- `APPLE_PASSWORD`: app-specific password
-- `APPLE_TEAM_ID`: Apple Developer Team ID
-
-After secrets are set, publishing a GitHub Release (or running the workflow manually) will build, sign, notarize, and upload `peri-hub-macos-arm64.dmg`.
+Current release uses `unsigned` macOS builds (without Apple signing/notarization).
 
 ### Download
 
@@ -119,7 +105,18 @@ After secrets are set, publishing a GitHub Release (or running the workflow manu
 
 | Platform | Architecture | Package | Download |
 | --- | --- | --- | --- |
-| macOS | Apple Silicon (ARM64) | DMG | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+| macOS | Apple Silicon (ARM64) | DMG (unsigned) | [Download](https://github.com/EricBoum/peri-hub/releases/latest/download/peri-hub-macos-arm64.dmg) |
+
+### macOS Install
+
+1. Download and open the DMG, then drag `peri-hub.app` to `Applications`.
+2. In `Applications`, right-click `peri-hub.app` and choose `Open`.
+3. If blocked, go to `System Settings -> Privacy & Security` and click `Open Anyway`.
+4. If it is still blocked, run:
+
+```bash
+xattr -dr com.apple.quarantine /Applications/peri-hub.app
+```
 
 ### Recommended GitHub Topics
 
