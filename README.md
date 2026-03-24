@@ -36,6 +36,22 @@ pnpm tauri dev
 - Windows：
   `pnpm build:win`
 
+### 发布（签名 + 公证）
+
+已配置 GitHub Actions 工作流：
+`/.github/workflows/release-macos-signed.yml`
+
+发布前需要在仓库 `Settings -> Secrets and variables -> Actions` 配置：
+
+- `APPLE_CERTIFICATE`：Developer ID Application 证书（`.p12`）的 base64
+- `APPLE_CERTIFICATE_PASSWORD`：`.p12` 密码
+- `APPLE_SIGNING_IDENTITY`：签名身份（例如 `Developer ID Application: ...`）
+- `APPLE_ID`：Apple ID 邮箱
+- `APPLE_PASSWORD`：Apple app-specific password
+- `APPLE_TEAM_ID`：Apple Developer Team ID
+
+配置完成后，发布一个 GitHub Release（或手动触发 workflow）即可生成并上传已签名公证的 `peri-hub-macos-arm64.dmg`。
+
 ### 下载
 
 
@@ -79,6 +95,23 @@ pnpm tauri dev
   `pnpm build:mac`
 - Windows:
   `pnpm build:win`
+
+### Release (Signed + Notarized)
+
+GitHub Actions workflow is configured at:
+`/.github/workflows/release-macos-signed.yml`
+
+Before release, add these repository secrets in
+`Settings -> Secrets and variables -> Actions`:
+
+- `APPLE_CERTIFICATE`: base64 of your Developer ID Application `.p12`
+- `APPLE_CERTIFICATE_PASSWORD`: password of the `.p12`
+- `APPLE_SIGNING_IDENTITY`: signing identity (for example `Developer ID Application: ...`)
+- `APPLE_ID`: Apple ID email
+- `APPLE_PASSWORD`: app-specific password
+- `APPLE_TEAM_ID`: Apple Developer Team ID
+
+After secrets are set, publishing a GitHub Release (or running the workflow manually) will build, sign, notarize, and upload `peri-hub-macos-arm64.dmg`.
 
 ### Download
 
