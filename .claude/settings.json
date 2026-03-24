@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc -l /Users/boumeric/Documents/myself/project/peri-hub/src-tauri/src/monitor/*.rs /Users/boumeric/Documents/myself/project/peri-hub/src-tauri/src/ddc/*.rs)"
+    ]
+  }
+}

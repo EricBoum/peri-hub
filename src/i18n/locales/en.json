@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "Peripheral Manager"
+  },
+  "sidebar": {
+    "devices": "Devices",
+    "monitor": "Monitors",
+    "mouse": "Mouse",
+    "settings": "Settings",
+    "theme": "Theme",
+    "language": "Language"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "monitor": {
+    "title": "Monitor Management",
+    "detected": "{{count}} monitor(s) detected",
+    "primary": "Primary",
+    "monitorId": "Monitor {{id}}",
+    "resolution": "Resolution",
+    "scale": "Scale",
+    "refreshRate": "Refresh Rate",
+    "position": "Position",
+    "rotation": "Rotation",
+    "moreSettings": "More Settings",
+    "noMonitor": "No monitors detected",
+    "noMonitorHint": "Please check the connection and click refresh",
+    "resolutionAndRefreshRate": "Resolution & Refresh Rate",
+    "resolutionAndRefreshRateHint": "Select resolution and refresh rate, then click apply",
+    "loadingModes": "Loading available modes...",
+    "retinaHiDPI": "Retina (HiDPI)",
+    "lowResolution": "Low Resolution",
+    "unsavedChanges": "Unsaved changes",
+    "notFound": "Monitor not found",
+    "current": "Current {{width}} × {{height}} @ {{frequency}} Hz"
+  },
+  "mouse": {
+    "title": "Mouse",
+    "subtitle": "Manage mouse devices",
+    "detected": "{{count}} mouse device(s) detected",
+    "connection": "Connection",
+    "serialNumber": "Serial Number",
+    "noMouse": "No mouse detected",
+    "noMouseHint": "Please connect a mouse and click refresh"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Application preferences",
+    "inDevelopment": "In Development",
+    "inDevelopmentHint": "This feature is under development, stay tuned"
+  },
+  "common": {
+    "refresh": "Refresh",
+    "apply": "Apply",
+    "back": "Back"
+  },
+  "controls": {
+    "display": "Display",
+    "color": "Color",
+    "audio": "Audio",
+    "inputAndPower": "Input & Power",
+    "brightness": "Brightness",
+    "contrast": "Contrast",
+    "sharpness": "Sharpness",
+    "saturation": "Saturation",
+    "redGain": "Red Gain",
+    "greenGain": "Green Gain",
+    "blueGain": "Blue Gain",
+    "volume": "Volume",
+    "inputSource": "Input Source",
+    "powerMode": "Power Mode",
+    "probing": "Detecting supported controls...",
+    "notSupported": "This monitor does not support DDC control",
+    "noControls": "No controls detected",
+    "power": {
+      "on": "On",
+      "standby": "Standby",
+      "suspend": "Suspend",
+      "off": "Off"
+    },
+    "input": {
+      "vga": "VGA",
+      "dvi": "DVI",
+      "hdmi1": "HDMI 1",
+      "hdmi2": "HDMI 2",
+      "dp": "DisplayPort",
+      "usbc": "USB-C"
+    }
+  }
+}

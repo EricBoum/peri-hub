@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "外设管理"
+  },
+  "sidebar": {
+    "devices": "设备",
+    "monitor": "显示器",
+    "mouse": "鼠标",
+    "settings": "设置",
+    "theme": "主题",
+    "language": "语言"
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  },
+  "monitor": {
+    "title": "显示器管理",
+    "detected": "检测到 {{count}} 台显示器",
+    "primary": "主显示器",
+    "monitorId": "显示器 {{id}}",
+    "resolution": "分辨率",
+    "scale": "缩放",
+    "refreshRate": "刷新率",
+    "position": "位置",
+    "rotation": "旋转",
+    "moreSettings": "更多设置",
+    "noMonitor": "未检测到显示器",
+    "noMonitorHint": "请检查显示器连接后点击刷新",
+    "resolutionAndRefreshRate": "分辨率与刷新率",
+    "resolutionAndRefreshRateHint": "选择分辨率和刷新率后点击应用",
+    "loadingModes": "加载可用模式...",
+    "retinaHiDPI": "Retina (HiDPI)",
+    "lowResolution": "低分辨率",
+    "unsavedChanges": "有未保存的更改",
+    "notFound": "未找到该显示器",
+    "current": "当前 {{width}} × {{height}} @ {{frequency}} Hz"
+  },
+  "mouse": {
+    "title": "鼠标",
+    "subtitle": "管理鼠标设备",
+    "detected": "检测到 {{count}} 个鼠标设备",
+    "connection": "连接方式",
+    "serialNumber": "序列号",
+    "noMouse": "未检测到鼠标",
+    "noMouseHint": "请连接鼠标设备后点击刷新"
+  },
+  "settings": {
+    "title": "设置",
+    "subtitle": "应用偏好设置",
+    "inDevelopment": "开发中",
+    "inDevelopmentHint": "该功能正在开发中，敬请期待"
+  },
+  "common": {
+    "refresh": "刷新检测",
+    "apply": "应用",
+    "back": "返回"
+  },
+  "controls": {
+    "display": "显示",
+    "color": "色彩",
+    "audio": "音频",
+    "inputAndPower": "输入与电源",
+    "brightness": "亮度",
+    "contrast": "对比度",
+    "sharpness": "锐度",
+    "saturation": "饱和度",
+    "redGain": "红色增益",
+    "greenGain": "绿色增益",
+    "blueGain": "蓝色增益",
+    "volume": "音量",
+    "inputSource": "输入源",
+    "powerMode": "电源模式",
+    "probing": "正在检测支持的控制项...",
+    "notSupported": "该显示器不支持 DDC 控制",
+    "noControls": "未检测到可用的控制项",
+    "power": {
+      "on": "开启",
+      "standby": "待机",
+      "suspend": "休眠",
+      "off": "关闭"
+    },
+    "input": {
+      "vga": "VGA",
+      "dvi": "DVI",
+      "hdmi1": "HDMI 1",
+      "hdmi2": "HDMI 2",
+      "dp": "DisplayPort",
+      "usbc": "USB-C"
+    }
+  }
+}

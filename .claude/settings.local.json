@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cargo build:*)",
+      "Bash(npx tsc:*)",
+      "WebSearch",
+      "Bash(pnpm add:*)",
+      "Bash(pnpm build:*)",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:glenwing.github.io)",
+      "WebFetch(domain:www.ddcutil.com)",
+      "WebFetch(domain:moverest.xyz)",
+      "WebFetch(domain:github.com)",
+      "Bash(find /Users/boumeric/Documents/myself/project/tauri-demo/src -type f -exec wc -l {} +)",
+      "Bash(sort -k2)",
+      "Bash(find /Users/boumeric/Documents/myself/project/tauri-demo/src-tauri/src -type f -exec wc -l {} +)",
+      "Bash(mv components/monitor/ResolutionPanel.tsx pages/MonitorDetailPage/ResolutionPanel.tsx)",
+      "Bash(mv components/monitor/VcpControlsSection.tsx pages/MonitorDetailPage/VcpControlsSection.tsx)",
+      "Bash(rmdir components/monitor)"
+    ]
+  }
+}
